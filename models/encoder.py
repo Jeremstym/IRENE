@@ -18,10 +18,10 @@ from torch.nn.modules.utils import _pair
 from scipy import ndimage
 
 from . import configs
-from .models.attention import Attention
-from .models.embed import Embeddings 
-from .models.mlp import Mlp
-from .models.block import Block
+from .attention import Attention
+from .embed import Embeddings 
+from .mlp import Mlp
+from .block import Block
 
 class Encoder(nn.Module):
     def __init__(self, config, vis):
