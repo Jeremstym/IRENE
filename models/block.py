@@ -17,10 +17,10 @@ from torch.nn import BCEWithLogitsLoss,CrossEntropyLoss, Dropout, Softmax, Linea
 from torch.nn.modules.utils import _pair
 from scipy import ndimage
 
-import models.configs as configs
-from models.attention import Attention
-from models.embed import Embeddings 
-from models.mlp import Mlp
+from . import configs
+from .attention import Attention
+from .embed import Embeddings 
+from .mlp import Mlp
 
 ATTENTION_Q = "MultiHeadDotProductAttention_1/query"
 ATTENTION_K = "MultiHeadDotProductAttention_1/key"

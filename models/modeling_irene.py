@@ -17,12 +17,12 @@ from torch.nn import BCEWithLogitsLoss,CrossEntropyLoss, Dropout, Softmax, Linea
 from torch.nn.modules.utils import _pair
 from scipy import ndimage
 
-import models.configs as configs
-from models.attention import Attention
-from models.embed import Embeddings 
-from models.mlp import Mlp
-from models.block import Block
-from models.encoder import Encoder
+from . import configs
+from .attention import Attention
+from .embed import Embeddings 
+from .mlp import Mlp
+from .block import Block
+from .encoder import Encoder
 import pdb
 
 logger = logging.getLogger(__name__)

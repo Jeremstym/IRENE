@@ -17,8 +17,8 @@ from torch.nn import BCEWithLogitsLoss,CrossEntropyLoss, Dropout, Softmax, Linea
 from torch.nn.modules.utils import _pair
 from scipy import ndimage
 
-import models.configs as configs
-from models.attention import Attention
+from . import configs
+from .attention import Attention
 import pdb
 
 class Embeddings(nn.Module):

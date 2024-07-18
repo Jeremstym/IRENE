@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torch.nn import BCEWithLogitsLoss,CrossEntropyLoss, Dropout, Softmax, Linear, Conv2d, LayerNorm
-import models.configs as configs
+from . import configs
 import math
 
 class Attention(nn.Module):
