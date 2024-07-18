@@ -17,11 +17,11 @@ from torch.nn import BCEWithLogitsLoss,CrossEntropyLoss, Dropout, Softmax, Linea
 from torch.nn.modules.utils import _pair
 from scipy import ndimage
 
-import models.configs as configs
-from models.attention import Attention
-from models.embed import Embeddings 
-from models.mlp import Mlp
-from models.block import Block
+from .models import configs
+from .models.attention import Attention
+from .models.embed import Embeddings 
+from .models.mlp import Mlp
+from .models.block import Block
 
 class Encoder(nn.Module):
     def __init__(self, config, vis):
